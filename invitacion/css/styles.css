@@ -1,0 +1,912 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --cream: #f9f4e9;
+
+    --cream-dark: #eee3cd;
+
+    --gold: #b68b43;
+
+    --gold-light: #d4b46d;
+
+    --green: #66725c;
+
+    --brown: #68533d;
+
+    --text: #514437;
+
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    color:
+        var(--text);
+
+    background:
+        var(--cream);
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+.invitation-section {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding:
+        80px 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    text-align: center;
+
+    overflow: hidden;
+
+
+    background:
+
+        linear-gradient(
+            rgba(255,255,255,.10),
+            rgba(255,255,255,.10)
+        ),
+
+        url("../assets/fondo-papel.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+/* =========================================================
+   FLORES
+========================================================= */
+
+.invitation-section::before,
+.invitation-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+}
+
+
+.invitation-section::before {
+
+    top: -10px;
+
+    left: -20px;
+
+    background-image:
+        url("../assets/flores-superior.png");
+
+}
+
+
+.invitation-section::after {
+
+    right: -20px;
+
+    bottom: -10px;
+
+    background-image:
+        url("../assets/flores-inferior.png");
+
+}
+
+
+/* =========================================================
+   CONTENIDO POR ENCIMA
+========================================================= */
+
+.invitation-section > * {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =========================================================
+   PORTADA
+========================================================= */
+
+.decorative-frame {
+
+    width: min(
+        480px,
+        88vw
+    );
+
+    min-height: 530px;
+
+    padding:
+        60px 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        2px solid
+        rgba(182,139,67,.65);
+
+    position: relative;
+
+}
+
+
+.decorative-frame::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border:
+        1px solid
+        rgba(182,139,67,.30);
+
+}
+
+
+.small-text {
+
+    display: block;
+
+    margin-bottom: -8px;
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.script-title {
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            80px,
+            18vw,
+            120px
+        );
+
+    font-weight: 400;
+
+    line-height: 1;
+
+}
+
+
+.typewriter {
+
+    max-width: 350px;
+
+    min-height: 65px;
+
+    margin-top: 25px;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================================
+   INDICADOR SCROLL
+========================================================= */
+
+.scroll-indicator {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    animation:
+        scrollBounce 1.8s infinite;
+
+}
+
+
+@keyframes scrollBounce {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(8px);
+    }
+
+}
+
+
+/* =========================================================
+   ANILLOS
+========================================================= */
+
+.rings {
+
+    width: 150px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.rings-small {
+
+    width: 105px;
+
+    margin:
+        18px 0;
+
+}
+
+
+/* =========================================================
+   NOVIOS
+========================================================= */
+
+.section-intro {
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 43px;
+
+}
+
+
+.couple-names {
+
+    max-width: 600px;
+
+    margin:
+        12px 0;
+
+    color:
+        var(--brown);
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            45px,
+            12vw,
+            70px
+        );
+
+    font-weight: 400;
+
+}
+
+
+.story-text {
+
+    max-width: 450px;
+
+    margin-top: 16px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+}
+
+
+.ornament {
+
+    margin-top: 30px;
+
+    color:
+        var(--gold);
+
+    font-size: 34px;
+
+}
+
+
+/* =========================================================
+   FOTO
+========================================================= */
+
+.couple-photo {
+
+    width: 190px;
+
+    height: 190px;
+
+    padding: 6px;
+
+    margin-bottom: 30px;
+
+    border:
+        2px solid
+        var(--gold);
+
+    border-radius: 50%;
+
+}
+
+
+.couple-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+
+/* =========================================================
+   PADRES
+========================================================= */
+
+.section-script {
+
+    color:
+        var(--brown);
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            42px,
+            10vw,
+            62px
+        );
+
+    font-weight: 400;
+
+}
+
+
+.parents-grid {
+
+    width: min(
+        500px,
+        90vw
+    );
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+.parent-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 25px;
+
+}
+
+
+/* =========================================================
+   INVITADO
+========================================================= */
+
+.invitation-message {
+
+    max-width: 480px;
+
+    min-height: 140px;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(
+            45px,
+            11vw,
+            65px
+        );
+
+    line-height: 1.15;
+
+}
+
+
+.guest-name {
+
+    margin-top: 10px;
+
+}
+
+
+.guest-name span {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.guest-name h2 {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 42px;
+
+    font-weight: 400;
+
+}
+
+
+.guest-count {
+
+    margin-top: 30px;
+
+    font-size: 24px;
+
+}
+
+
+.guest-count strong {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color:
+        var(--gold);
+
+    font-size: 42px;
+
+}
+
+
+/* =========================================================
+   DETALLES
+========================================================= */
+
+.event-details {
+
+    width: min(
+        500px,
+        90vw
+    );
+
+    margin:
+        35px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.detail-row {
+
+    padding:
+        13px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        120px 1fr;
+
+    text-align: left;
+
+    border-bottom:
+        1px solid
+        rgba(182,139,67,.25);
+
+}
+
+
+.detail-row strong {
+
+    color:
+        var(--gold);
+
+    font-size: 19px;
+
+}
+
+
+.detail-row span {
+
+    font-size: 19px;
+
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.wedding-button {
+
+    width:
+        min(
+            310px,
+            90vw
+        );
+
+    min-height: 50px;
+
+    margin-top: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        0 20px;
+
+    border-radius: 30px;
+
+    background:
+        var(--gold);
+
+    color:
+        white;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: .5px;
+
+    text-decoration: none;
+
+    transition:
+        .25s ease;
+
+}
+
+
+.wedding-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    background:
+        #a77b32;
+
+}
+
+
+.wedding-button.secondary {
+
+    background:
+        transparent;
+
+    color:
+        var(--gold);
+
+    border:
+        1px solid
+        var(--gold);
+
+}
+
+
+.farewell {
+
+    margin-top: 35px;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 38px;
+
+}
+
+
+/* =========================================================
+   ANIMACIONES
+========================================================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+
+.fade-up {
+
+    transform:
+        translateY(45px);
+
+}
+
+
+.fade-down {
+
+    transform:
+        translateY(-40px);
+
+}
+
+
+.fade-left {
+
+    transform:
+        translateX(-45px);
+
+}
+
+
+.fade-right {
+
+    transform:
+        translateX(45px);
+
+}
+
+
+.zoom-in {
+
+    transform:
+        scale(.75);
+
+}
+
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform:
+        translate(
+            0,
+            0
+        )
+        scale(1);
+
+}
+
+
+/* =========================================================
+   MÚSICA
+========================================================= */
+
+.music-button {
+
+    width: 45px;
+
+    height: 45px;
+
+    position: fixed;
+
+    right: 18px;
+
+    bottom: 18px;
+
+    z-index: 100;
+
+    border:
+        1px solid
+        rgba(182,139,67,.55);
+
+    border-radius: 50%;
+
+    background:
+        rgba(249,244,233,.92);
+
+    color:
+        var(--gold);
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .invitation-section {
+
+        padding:
+            70px 22px;
+
+    }
+
+
+    .invitation-section::before,
+    .invitation-section::after {
+
+        width: 170px;
+
+        height: 170px;
+
+    }
+
+
+    .parents-grid {
+
+        gap: 12px;
+
+    }
+
+
+    .parent-column {
+
+        font-size: 19px;
+
+    }
+
+
+    .detail-row {
+
+        grid-template-columns:
+            100px 1fr;
+
+    }
+
+
+    .detail-row strong,
+    .detail-row span {
+
+        font-size: 16px;
+
+    }
+
+}

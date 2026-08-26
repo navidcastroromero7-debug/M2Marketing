@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nuestra Boda
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./css/styles.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         MÚSICA
+    =========================================== -->
+
+    <button
+        id="musicButton"
+        class="music-button"
+        type="button"
+        aria-label="Reproducir música"
+    >
+        ♫
+    </button>
+
+
+    <audio
+        id="backgroundMusic"
+        loop
+    >
+        <source
+            src="./assets/musica.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+
+
+    <!-- ==========================================
+         1. PORTADA
+    =========================================== -->
+
+    <section
+        class="invitation-section cover-section"
+    >
+
+        <div class="decorative-frame">
+
+
+            <div class="reveal fade-down">
+
+                <span class="small-text">
+                    NUESTRA
+                </span>
+
+                <h1 class="script-title">
+                    Boda
+                </h1>
+
+            </div>
+
+
+            <p
+                class="typewriter"
+                data-text="Este día muy especial queremos compartirlo junto a nuestros seres queridos."
+            >
+            </p>
+
+
+            <div class="scroll-indicator">
+
+                <span>
+                    Desliza
+                </span>
+
+                <div>
+                    ↓
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         2. LOS NOVIOS
+    =========================================== -->
+
+    <section class="invitation-section couple-section">
+
+
+        <img
+            src="img/anillos de boda.jfif"
+            alt="Anillos de boda"
+            class="rings reveal zoom-in"
+        >
+
+
+        <div class="reveal fade-up">
+
+            <span class="section-intro">
+                Nos casamos
+            </span>
+
+        </div>
+
+
+        <h2
+            class="couple-names typewriter-title"
+            data-text="Julieta & Francisco"
+        >
+        </h2>
+
+
+        <p
+            class="story-text reveal fade-up"
+        >
+            Dios nos ha concedido la gracia
+            de conocernos y por ello queremos
+            compartir este momento contigo.
+        </p>
+
+
+        <div class="ornament reveal">
+            ♡
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==========================================
+         3. PADRES
+    =========================================== -->
+
+    <section class="invitation-section parents-section">
+
+
+        <div class="couple-photo reveal zoom-in">
+
+            <img
+                src="./img/novios.jpg"
+                alt="Foto de los novios"
+            >
+
+        </div>
+
+
+        <h2
+            class="section-script reveal fade-up"
+        >
+            En compañía de
+            <br>
+            nuestros padres
+        </h2>
+
+
+        <div class="parents-grid">
+
+
+            <div class="parent-column reveal fade-left">
+
+                <span>
+                    Camila Alegre
+                </span>
+
+                <span>
+                    Andrés Mendoza
+                </span>
+
+            </div>
+
+
+            <div class="parent-column reveal fade-right">
+
+                <span>
+                    Sofía Duarte
+                </span>
+
+                <span>
+                    Mateo López
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==========================================
+         4. INVITACIÓN PERSONAL
+    =========================================== -->
+
+    <section class="invitation-section guest-section">
+
+
+        <p
+            class="invitation-message typewriter-large"
+            data-text="Tenemos el honor de invitarte a nuestra boda"
+        >
+        </p>
+
+
+        <img
+            src="./assets/anillos.png"
+            alt=""
+            class="rings-small reveal zoom-in"
+        >
+
+
+        <div class="guest-name reveal fade-up">
+
+            <span>
+                Invitado especial
+            </span>
+
+            <h2>
+                Juan Contreras
+            </h2>
+
+        </div>
+
+
+        <div class="guest-count reveal fade-up">
+
+            Pase para
+
+            <strong>
+                2
+            </strong>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==========================================
+         5. EL GRAN DÍA
+    =========================================== -->
+
+    <section class="invitation-section details-section">
+
+
+        <img
+            src="./assets/anillos.png"
+            alt=""
+            class="rings-small reveal zoom-in"
+        >
+
+
+        <h2 class="section-script reveal fade-up">
+            El Gran Día
+        </h2>
+
+
+        <div class="event-details">
+
+
+            <div class="detail-row reveal fade-left">
+
+                <strong>
+                    Fecha:
+                </strong>
+
+                <span>
+                    XX/XX/XXXX
+                </span>
+
+            </div>
+
+
+            <div class="detail-row reveal fade-right">
+
+                <strong>
+                    Hora:
+                </strong>
+
+                <span>
+                    XX:XX p. m.
+                </span>
+
+            </div>
+
+
+            <div class="detail-row reveal fade-left">
+
+                <strong>
+                    Lugar:
+                </strong>
+
+                <span>
+                    XX
+                </span>
+
+            </div>
+
+
+            <div class="detail-row reveal fade-right">
+
+                <strong>
+                    Dirección:
+                </strong>
+
+                <span>
+                    XX
+                </span>
+
+            </div>
+
+
+            <div class="detail-row reveal fade-left">
+
+                <strong>
+                    Traje:
+                </strong>
+
+                <span>
+                    Formal
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- UBICACIÓN -->
+
+        <a
+            href="#"
+            class="wedding-button reveal fade-up"
+            target="_blank"
+        >
+            📍 Cómo llegar
+        </a>
+
+
+        <!-- CONFIRMACIÓN -->
+
+        <a
+            href="#"
+            class="wedding-button secondary reveal fade-up"
+            target="_blank"
+        >
+            Confirmar asistencia
+        </a>
+
+
+        <p class="farewell reveal fade-up">
+
+            Te esperamos ♥
+
+        </p>
+
+
+    </section>
+
+
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
