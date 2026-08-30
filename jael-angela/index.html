@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#3D5547">
+
+    <title>
+        Jael & Angela | Nuestra Boda Civil
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     PANTALLA DE BIENVENIDA + MÚSICA
+========================================== -->
+
+    <div class="welcome-screen" id="welcomeScreen">
+
+        <div class="welcome-card">
+
+            <span class="welcome-small">
+                TENEMOS ALGO ESPECIAL QUE CONTARTE
+            </span>
+
+            <div class="welcome-ornament">
+                ❦
+            </div>
+
+            <h2>
+                Jael
+                <span>&</span>
+                Angela
+            </h2>
+
+            <p>
+                Acompáñanos a celebrar
+                nuestra boda civil.
+            </p>
+
+            <button type="button" class="open-invitation-button" id="openInvitationButton">
+                <span>♫</span>
+                Abrir invitación
+            </button>
+
+            <small>
+                Esta invitación contiene música
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+     AUDIO
+========================================== -->
+
+    <audio id="weddingMusic" preload="auto" loop>
+
+        <source src="./audio/golden-hour.mp3" type="audio/mpeg">
+
+    </audio>
+
+
+    <!-- =========================================
+     CONTROL FLOTANTE DE MÚSICA
+========================================== -->
+
+    <button type="button" class="music-control" id="musicControl" aria-label="Activar o silenciar música"
+        title="Música">
+
+        <span id="musicIcon">
+            ♫
+        </span>
+
+    </button>
+
+
+    <!-- =========================================
+         PORTADA
+    ========================================== -->
+
+    <!-- =========================================
+     PORTADA PRINCIPAL CON FOTO
+========================================== -->
+
+    <header class="hero-wedding" id="inicio">
+
+        <div class="hero-wedding-glow hero-glow-one"></div>
+        <div class="hero-wedding-glow hero-glow-two"></div>
+
+
+        <div class="hero-wedding-frame">
+
+            <div class="hero-wedding-content reveal">
+
+
+                <span class="hero-kicker">
+                    NUESTRA BODA CIVIL
+                </span>
+
+
+                <!-- FOTO DE LOS NOVIOS -->
+
+                <div class="wedding-photo-wrapper">
+
+                    <div class="wedding-photo-decoration"></div>
+
+                    <div class="wedding-photo-frame">
+
+                        <img src="./img/novios.jpg" alt="Jael y Angela">
+
+                    </div>
+
+                </div>
+
+
+                <!-- NOMBRES -->
+
+                <h1 class="hero-couple-names">
+
+                    Jael
+
+                    <span>
+                        &
+                    </span>
+
+                    Angela
+
+                </h1>
+
+
+                <div class="hero-floral-divider">
+
+                    <span></span>
+
+                    <b>
+                        ❦
+                    </b>
+
+                    <span></span>
+
+                </div>
+
+
+                <p class="hero-wedding-date">
+                    17 · 10 · 2026
+                </p>
+
+
+                <p class="hero-wedding-time">
+                    3:00 P. M.
+                </p>
+
+
+                <p class="hero-wedding-message">
+
+                    Dos vidas, un mismo camino
+                    y una historia que queremos
+                    celebrar junto a ustedes.
+
+                </p>
+
+
+                <div class="hero-wedding-actions">
+
+                    <a href="#confirmacion" class="hero-button hero-button-primary">
+                        ✓ Confirmar asistencia
+                    </a>
+
+
+                    <a href="#ubicacion" class="hero-button hero-button-secondary">
+                        ⌖ Ver ubicación
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         INVITACIÓN
+    ========================================== -->
+
+    <main>
+
+
+        <section class="section invitation-section" id="invitacion">
+
+            <div class="section-content reveal">
+
+
+                <span class="section-small-title">
+                    CON MUCHA ALEGRÍA
+                </span>
+
+
+                <h2>
+                    ¡Nos casamos!
+                </h2>
+
+
+                <div class="leaf-divider">
+
+                    <span></span>
+
+                    <b>❦</b>
+
+                    <span></span>
+
+                </div>
+
+
+                <p class="invitation-text">
+
+                    Después de compartir tantos momentos,
+                    hemos decidido comenzar una nueva etapa
+                    juntos.
+
+                </p>
+
+
+                <p class="invitation-text">
+
+                    Nos haría muy felices contar con tu
+                    presencia para celebrar nuestra
+
+                    <strong>
+                        boda civil.
+                    </strong>
+
+                </p>
+
+
+                <div class="couple-names">
+
+                    <span>
+                        Jael Berrios Ramos
+                    </span>
+
+                    <small>
+                        &
+                    </small>
+
+                    <span>
+                        Angela Angulo Ames
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             PADRES
+        ========================================== -->
+
+        <section class="section parents-section">
+
+            <div class="section-content reveal">
+
+
+                <span class="section-small-title">
+                    CON LA BENDICIÓN DE NUESTROS PADRES
+                </span>
+
+
+                <h2>
+                    Nuestras familias
+                </h2>
+
+
+                <div class="parents-grid">
+
+
+                    <article class="parent-card">
+
+                        <span class="family-label">
+                            Padres del novio
+                        </span>
+
+                        <h3>
+                            Nelly Ramos Coa
+                        </h3>
+
+                        <span class="ampersand">
+                            &
+                        </span>
+
+                        <h3>
+                            Alberto Berrios Rojas
+                        </h3>
+
+                    </article>
+
+
+                    <div class="parents-ornament">
+                        ❦
+                    </div>
+
+
+                    <article class="parent-card">
+
+                        <span class="family-label">
+                            Padres de la novia
+                        </span>
+
+                        <h3>
+                            Isidro Angulo Romero
+                        </h3>
+
+                        <span class="ampersand">
+                            &
+                        </span>
+
+                        <h3>
+                            Sixta Ames Cáceres
+                        </h3>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             FECHA
+        ========================================== -->
+
+        <section class="section event-section">
+
+            <div class="section-content reveal">
+
+                <span class="section-small-title">
+                    RESERVA LA FECHA
+                </span>
+
+
+                <h2>
+                    Octubre
+                </h2>
+
+
+                <div class="date-card">
+
+                    <div class="date-side">
+
+                        <span>
+                            SÁBADO
+                        </span>
+
+                    </div>
+
+
+                    <div class="date-number">
+
+                        <strong>
+                            17
+                        </strong>
+
+                        <small>
+                            2026
+                        </small>
+
+                    </div>
+
+
+                    <div class="date-side">
+
+                        <span>
+                            3:00 P. M.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="event-note">
+
+                    Te esperamos para compartir
+                    este momento tan especial.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CUENTA REGRESIVA
+        ========================================== -->
+
+        <section class="countdown-section">
+
+            <div class="section-content reveal">
+
+                <span class="section-small-title light">
+                    FALTA MUY POCO
+                </span>
+
+
+                <h2>
+                    Nuestro gran día
+                </h2>
+
+
+                <div class="countdown" id="countdown">
+
+
+                    <div>
+
+                        <strong id="days">
+                            00
+                        </strong>
+
+                        <span>
+                            Días
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong id="hours">
+                            00
+                        </strong>
+
+                        <span>
+                            Horas
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong id="minutes">
+                            00
+                        </strong>
+
+                        <span>
+                            Min.
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong id="seconds">
+                            00
+                        </strong>
+
+                        <span>
+                            Seg.
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             UBICACIÓN
+        ========================================== -->
+
+        <section class="section location-section" id="ubicacion">
+
+            <div class="section-content reveal">
+
+
+                <span class="location-icon">
+                    ♧
+                </span>
+
+
+                <span class="section-small-title">
+                    UBICACIÓN
+                </span>
+
+
+                <h2>
+                    Lugar de la ceremonia
+                </h2>
+
+
+                <p>
+
+                    Queremos que llegues sin
+                    complicaciones.
+
+                </p>
+
+
+                <p class="location-help">
+
+                    Presiona el botón y Waze
+                    te llevará directamente al lugar.
+
+                </p>
+
+
+                <a class="main-button"
+                    href="https://waze.com/ul?ll=-16.454801559448242%2C-71.5513687133789&navigate=yes" target="_blank"
+                    rel="noopener noreferrer">
+
+                    <span>
+                        ⌖
+                    </span>
+
+                    Cómo llegar con Waze
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CONFIRMACIÓN
+        ========================================== -->
+
+        <section class="section confirmation-section" id="confirmacion">
+
+            <div class="section-content reveal">
+
+
+                <div class="confirmation-frame">
+
+
+                    <span class="section-small-title">
+                        RSVP
+                    </span>
+
+
+                    <h2>
+                        Confirma tu asistencia
+                    </h2>
+
+
+                    <div class="leaf-divider">
+
+                        <span></span>
+
+                        <b>❦</b>
+
+                        <span></span>
+
+                    </div>
+
+
+                    <p>
+
+                        Tu presencia hará este día
+                        aún más especial.
+
+                    </p>
+
+
+                    <p>
+
+                        Ayúdanos a organizar todos
+                        los detalles confirmando
+                        tu asistencia.
+
+                    </p>
+
+
+                    <!-- =========================================
+     FORMULARIO RSVP
+========================================== -->
+
+                    <div class="rsvp-card">
+
+                        <div class="rsvp-form" id="rsvpFormContainer">
+
+                            <div class="rsvp-question">
+
+                                <label for="mainGuest">
+                                    Nombre y apellido
+                                </label>
+
+                                <input type="text" id="mainGuest" maxlength="80" placeholder="Ej. Carlos Ramírez"
+                                    autocomplete="name">
+
+                            </div>
+
+
+                            <div class="rsvp-question">
+
+                                <label>
+                                    ¿Podrás acompañarnos?
+                                </label>
+
+                                <div class="attendance-options">
+
+                                    <button type="button" class="attendance-option" data-status="CONFIRMADO">
+                                        ♡ Sí, asistiré
+                                    </button>
+
+                                    <button type="button" class="attendance-option" data-status="NO ASISTIRÁ">
+                                        No podré asistir
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="guest-section hidden" id="guestSection">
+
+                                <div class="rsvp-question">
+
+                                    <label for="guestQuantity">
+                                        ¿Cuántas personas asistirán?
+                                    </label>
+
+                                    <select id="guestQuantity">
+
+                                        <option value="1">
+                                            1 persona
+                                        </option>
+
+                                        <option value="2">
+                                            2 personas
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="guest-names" id="guestNames"></div>
+
+                            </div>
+
+
+                            <div class="rsvp-question">
+
+                                <label for="rsvpMessage">
+                                    Mensaje para los novios
+                                    <small>(opcional)</small>
+                                </label>
+
+                                <textarea id="rsvpMessage" maxlength="250" rows="4"
+                                    placeholder="Déjales un bonito mensaje..."></textarea>
+
+                            </div>
+
+
+                            <button type="button" class="main-button rsvp-submit" id="submitRsvp">
+                                Confirmar asistencia
+                            </button>
+
+
+                            <div class="rsvp-status" id="rsvpStatus" aria-live="polite"></div>
+
+                        </div>
+
+
+                        <!-- RESULTADO -->
+
+                        <div class="rsvp-success hidden" id="rsvpSuccess">
+
+                            <span class="success-check">
+                                ✓
+                            </span>
+
+                            <span class="section-small-title">
+                                CONFIRMACIÓN REGISTRADA
+                            </span>
+
+                            <h3>
+                                ¡Nos vemos en la boda!
+                            </h3>
+
+                            <p id="successMessage"></p>
+
+
+                            <!-- PASE DIGITAL -->
+
+                            <div class="digital-pass" id="digitalPass">
+
+                                <span class="pass-small">
+                                    BODA CIVIL
+                                </span>
+
+                                <h3>
+                                    Jael
+                                    <span>&</span>
+                                    Angela
+                                </h3>
+
+                                <div class="pass-divider">
+                                    ❦
+                                </div>
+
+                                <p class="pass-title">
+                                    PASE DE INVITACIÓN
+                                </p>
+
+                                <strong class="pass-quantity" id="passQuantity">
+                                    Pase válido para 1 persona
+                                </strong>
+
+                                <div class="pass-guests" id="passGuests"></div>
+
+                                <div class="pass-event">
+
+                                    <span>
+                                        17 · OCTUBRE · 2026
+                                    </span>
+
+                                    <span>
+                                        3:00 P. M.
+                                    </span>
+
+                                </div>
+
+                                <div class="pass-code">
+
+                                    Código
+
+                                    <strong id="passCode">
+                                        JA-0000
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <button type="button" class="main-button" id="downloadPass">
+                                ↓ Descargar mi pase
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONEXIÓN OCULTA CON GOOGLE -->
+
+                    <iframe name="rsvpReceiver" id="rsvpReceiver" class="rsvp-iframe"
+                        title="Procesamiento de confirmación"></iframe>
+
+
+                    <form id="rsvpBridgeForm"
+                        action="https://script.google.com/macros/s/AKfycbzFUN9d0MjkRHco6NWy_ouE1hRlnUusKA5ec4TmjV6EDqjpsCrBlxZCD7uB85QOJ4tW/exec"
+                        method="POST" target="rsvpReceiver" class="rsvp-bridge">
+
+                        <input type="hidden" name="payload" id="rsvpPayload">
+
+                    </form>
+
+
+                    <small class="confirmation-note">
+
+                        La confirmación será registrada
+                        mediante Google Forms.
+
+                    </small>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CIERRE
+        ========================================== -->
+
+        <section class="final-section">
+
+            <div class="final-content reveal">
+
+                <span class="final-ornament">
+                    ❦
+                </span>
+
+
+                <p>
+                    Con cariño
+                </p>
+
+
+                <h2>
+
+                    Jael
+
+                    <span>&</span>
+
+                    Angela
+
+                </h2>
+
+
+                <p class="final-date">
+                    17 · OCTUBRE · 2026
+                </p>
+
+
+                <p class="final-message">
+
+                    Será un honor compartir
+                    este momento contigo.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/musica.js"></script>
+    <script src="./js/rsvp.js"></script>
+
+</body>
+
+</html>
